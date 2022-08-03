@@ -1,8 +1,12 @@
 import unittest
 from src.pub import Pub
+from src.customer import Customer
+from src.drink import Drink
 
 class TestPub(unittest.TestCase):
     def setUp(self):
+        self.customer = Customer("Dave", 40.00)
+        self.drink = Drink("Bud", 3.50)
         self.pub = Pub("The Prancing Pony", 100.00)
 
     def test_pub_has_name(self):
