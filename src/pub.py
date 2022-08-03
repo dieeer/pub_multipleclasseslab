@@ -1,3 +1,6 @@
+from xmlrpc.client import Boolean
+
+
 class Pub:
     def __init__(self, name, till):
         self.name = name
